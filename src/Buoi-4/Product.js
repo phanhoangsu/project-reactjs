@@ -1,4 +1,5 @@
 import React from "react";
+// import style from "./productItem.modul.css";
 
 const Product = ({ img, title, description, price }) => {
   // const { img, title, description, price } = product;
@@ -11,6 +12,7 @@ const Product = ({ img, title, description, price }) => {
       }}
     >
       <div
+        className={["product-item"]}
         style={{
           padding: "5px",
           backgroundColor: "white",
