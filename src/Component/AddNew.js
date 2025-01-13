@@ -31,12 +31,12 @@ const AddNew = () => {
   };
 
   const handleDelete = (index) => {
-    const updatedItems = items.filter((i) => i !== index);
+    const updatedItems = items.filter((item, i) => i !== index);
     setItems(updatedItems);
   };
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div>
       <h1 style={{ margin: "30px" }}>THINGS TO DO</h1>
 
       <input
@@ -45,7 +45,7 @@ const AddNew = () => {
         onChange={(e) => setInputText(e.target.value)}
       />
 
-      <button onClick={handleAddItem}>Add text</button>
+      <button onClick={handleAddItem}>Add To Do </button>
 
       <p>
         {items.map((item, index) => (
