@@ -57,7 +57,7 @@ const AddNew = () => {
             onDelete={() => handleDelete(index)}
           />
         ))}
-        hiển thị danh sách
+        {/* hiển thị danh sách */}
       </p>
     </div>
   );
